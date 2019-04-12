@@ -26,7 +26,6 @@ namespace ProjectEuler
                     sum += divisibleByFive;
                     divisibleByFive += 5;
                 }
-                
                 if (divisibleByThree == divisibleByFive)
                 {
                     sum += divisibleByThree;
