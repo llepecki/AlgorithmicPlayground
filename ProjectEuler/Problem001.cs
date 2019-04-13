@@ -1,8 +1,8 @@
-using System;
 using Xunit;
 
-namespace ProjectEuler
+namespace Com.Lepecki.AlgorithmicPlayground.ProjectEuler
 {
+    // https://projecteuler.net/problem=1
     public class Problem001
     {
         [Fact]
