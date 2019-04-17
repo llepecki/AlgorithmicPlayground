@@ -11,8 +11,8 @@ namespace Com.Lepecki.AlgorithmicPlayground.Sorting
             {
                 throw new InvalidDataException("Unsorted and sorted arrays must be of the same size");
             }
-            
-            AddRow(new object[] {  unsorted, sorted });
+
+            AddRow(new object[] { unsorted, sorted });
         }
-    }  
+    }
 }

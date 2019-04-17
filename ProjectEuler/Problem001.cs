@@ -14,7 +14,7 @@ namespace Com.Lepecki.AlgorithmicPlayground.ProjectEuler
             int divisibleByThree = 3;
             int divisibleByFive = 5;
 
-            while (divisibleByThree < limes) 
+            while (divisibleByThree < limes)
             {
                 if (divisibleByThree < divisibleByFive)
                 {

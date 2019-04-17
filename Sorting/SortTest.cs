@@ -9,7 +9,7 @@ namespace Com.Lepecki.AlgorithmicPlayground.Sorting
         public void Test(int[] unsorted, int[] sorted)
         {
             Sort(unsorted);
-            
+
             for (int i = 0; i < unsorted.Length; i++)
             {
                 Assert.Equal(unsorted[i], sorted[i]);
@@ -17,5 +17,5 @@ namespace Com.Lepecki.AlgorithmicPlayground.Sorting
         }
 
         protected abstract void Sort(int[] array);
-    }  
+    }
 }

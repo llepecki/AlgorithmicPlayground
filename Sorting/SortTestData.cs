@@ -25,7 +25,7 @@ namespace Com.Lepecki.AlgorithmicPlayground.Sorting
                         {
                             int[] unsorted = ExtractNumbers(testData[0]);
                             int[] sorted = ExtractNumbers(testData[1]);
-                            
+
                             AddRow(unsorted, sorted);
                         }
                     }
