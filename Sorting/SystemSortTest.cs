@@ -1,12 +1,8 @@
-using System;
+using Com.Lepecki.AlgorithmicPlayground.Sorting.Algorithms;
 
 namespace Com.Lepecki.AlgorithmicPlayground.Sorting
 {
-    public class SystemSortTest : SortTest
+    public class SystemSortTest : SortTest<SystemSort>
     {
-        protected override void Sort(int[] array)
-        {
-            Array.Sort(array);
-        }
     }
 }

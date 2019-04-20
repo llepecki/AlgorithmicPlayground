@@ -1,21 +1,21 @@
+using Com.Lepecki.AlgorithmicPlayground.Sorting.Algorithms;
 using Xunit;
 
 namespace Com.Lepecki.AlgorithmicPlayground.Sorting
 {
-    public abstract class SortTest
+    public abstract class SortTest<T> where T : class, ISort, new()
     {
         [Theory]
         [ClassData(typeof(SortTestData))]
-        public void Test(int[] unsorted, int[] sorted)
+        public void UnsortedArraryShouldGetSorted(int[] unsorted, int[] sorted)
         {
-            Sort(unsorted);
+            ISort algorithm = new T();
+            algorithm.Sort(unsorted);
 
             for (int i = 0; i < unsorted.Length; i++)
             {
                 Assert.Equal(unsorted[i], sorted[i]);
             }
         }
-
-        protected abstract void Sort(int[] array);
     }
 }
